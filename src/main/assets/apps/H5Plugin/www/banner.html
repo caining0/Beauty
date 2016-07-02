@@ -1,0 +1,31 @@
+w<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    	<script src="js/adaptive-version2.js" charset="UTF-8"></script>
+    	<script>
+	    window['adaptive'].desinWidth = 750;// 设计图宽度
+	    window['adaptive'].baseFont = 18;// 没有缩放时的字体大小
+	    window['adaptive'].maxWidth = 480;// 页面最大宽度 默认540
+	    window['adaptive'].init();// 调用初始化方法
+	</script>
+	<script src="js/lazyload.js" charset="UTF-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		LazyLoad.js([
+			'js/mui.min.js'
+			, 'js/tools.js'
+			, 'js/app.js'
+			, 'js/banner.js'
+		], function () {
+			console.log('banner lazyload ok');
+		});
+    </script>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>图文页面</title>
+</head>
+<div class="box">
+	<div class="exo_banner" id="banner_out"><img id="bigpic" src="images/placeholder@2x.png"></div>
+</div>
+</body>
+</html>

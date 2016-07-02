@@ -1,0 +1,215 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:background="@color/white"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.onlylady.beautyapp.fragments.FindFragment">
+
+        <include
+            android:id="@+id/neterror"
+            layout="@layout/include_neterror" />
+
+        <LinearLayout
+            android:id="@+id/listviewlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hufu"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/hufukuang">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/hufu_icon"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@mipmap/hufu_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@+id/hufu_icon"
+                                android:text="护肤"
+                                android:textColor="@color/white"
+                                android:textSize="17sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_caizhuang"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_toRightOf="@+id/rl_hufu"
+                        android:layout_weight="1"
+                        android:background="@mipmap/caizhuangkuang">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/caizhuang_icon"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@mipmap/caizhuang_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@+id/caizhuang_icon"
+                                android:text="彩妆"
+                                android:textColor="@color/white"
+                                android:textSize="17sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear1"
+                    android:layout_marginTop="6dp"
+
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_meifa"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/meifakuang"
+                        android:gravity="center_vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/meifa_icon"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@mipmap/meifa_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@+id/meifa_icon"
+                                android:text="美发"
+                                android:textColor="@color/white"
+                                android:textSize="17sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_meiti"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_toRightOf="@+id/rl_hufu"
+                        android:layout_weight="1"
+                        android:background="@mipmap/meitikuang"
+                        android:gravity="center_vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/meiti_icon"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@mipmap/meiti_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@+id/meiti_icon"
+                                android:text="美体"
+                                android:textColor="@color/white"
+                                android:textSize="17sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7.5dp"
+                android:background="@color/dedede" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_find_zhuti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:text="主题专区"
+                    android:textColor="@color/home_text"
+                    android:textSize="17sp" />
+
+                <com.onlylady.beautyapp.views.MGridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_find_zhuti"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="6dp"
+                    android:numColumns="2"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="6dp">
+
+                </com.onlylady.beautyapp.views.MGridView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

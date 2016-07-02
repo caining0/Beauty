@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light" >
+
+    <RelativeLayout
+        android:id="@+id/aspect_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.pili.pldroid.player.widget.VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+             />
+
+        <TextView
+            android:id="@+id/text_zhibozhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+        <ImageView
+            android:id="@+id/fullscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/quanping"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/back_btn"-->
+        <!--android:text="aa"-->
+        <!--android:layout_gravity="top|left"-->
+        <!--android:background="@color/background_floating_material_dark"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<EditText-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/buffering_indicator"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:focusable="false"-->
+        <!--android:focusableInTouchMode="false"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="gone" >-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/buffering_msg"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:adjustViewBounds="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:ellipsize="marquee"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:marqueeRepeatLimit="0"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:scaleType="centerInside"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="bufferingsdfsdfsdfd"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="12sp" />&ndash;&gt;-->
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/buffering_progress"-->
+            <!--style="@android:style/Widget.ProgressBar.Large"-->
+            <!--android:layout_width="60dip"-->
+            <!--android:layout_height="60dip" />-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onlylady.beautyapp.views.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <com.onlylady.beautyapp.views.EasySlidingTabs
+        android:id="@+id/easyslidingtabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dedede"
+        android:paddingBottom="1dp"
+        android:paddingTop="6dp"
+        app:easyImageHeight="24dp"
+        app:easyImageWidth="24dp"
+        app:easyIndicatorHeight="0dp"
+        app:easySelectedTagTextColor="#ff3064"
+        app:easyTabTextColor="#000000"
+        app:easyTabTextSize="12sp" />
+
+
+    <com.onlylady.beautyapp.views.MyViewPager
+        android:id="@+id/easy_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/easyslidingtabs" />
+
+    <!-- <FrameLayout
+         android:id="@+id/homecontainer"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_above="@+id/radiogroup"
+         />
+     <RadioGroup
+         android:id="@+id/radiogroup"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_alignParentBottom="true"
+         android:orientation="horizontal">
+
+         <RadioButton
+             style="@style/radiobutton"
+             android:text="第一页"
+             android:textColor="@color/black" />
+
+         <RadioButton
+             style="@style/radiobutton"
+             android:text="第二页"
+             android:textColor="@color/black" />
+
+         <RadioButton
+             style="@style/radiobutton"
+             android:text="第三页"
+             android:textColor="@color/black" />
+
+         <RadioButton
+             style="@style/radiobutton"
+
+             android:text="第四页" />
+
+     </RadioGroup>-->
+</com.onlylady.beautyapp.views.RippleView>

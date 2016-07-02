@@ -1,0 +1,40 @@
+<com.onlylady.beautyapp.views.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/homeviewpagerheight"
+    android:background="@color/white"
+
+    >
+
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/convenientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:canLoop="true"
+        app:dotMarginBottom="15dp"
+    />
+
+
+
+ <!--   <LinearLayout
+        android:id="@+id/ll_pointslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/convenientBanner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </LinearLayout>-->
+
+</com.onlylady.beautyapp.views.SquareLayout>

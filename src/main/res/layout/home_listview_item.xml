@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.onlylady.beautyapp.views.SquareLayout
+        android:id="@+id/neirong"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homeviewpagerheight">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/below">
+
+            <ImageView
+                android:id="@+id/imageview"
+                style="@style/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/banner_750_650" />
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="@dimen/playbutton"
+                android:layout_height="@dimen/playbutton"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/beauty_play" />
+
+            <TextView
+                android:id="@+id/player_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/player_timer"
+                android:gravity="center"
+                android:text="04.52"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="27dp"
+            android:paddingRight="12dp">
+
+            <RelativeLayout
+                android:id="@+id/circlelay"
+                android:layout_width="@dimen/circleback"
+                android:layout_height="@dimen/circleback"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="18dp"
+                android:background="@mipmap/touxiang">
+
+                <com.onlylady.beautyapp.views.CircleImageView
+                    android:id="@+id/circle"
+                    android:layout_width="@dimen/circle"
+                    android:layout_centerInParent="true"
+                    android:layout_height="@dimen/circle"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circlelay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:text="吕布小小小小"
+                android:textColor="@color/home_back"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/below"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/logo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:text="护肤"
+                android:textColor="#ff3064"
+                android:textSize="14sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:background="#ff3064"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="80dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/home_text"
+                    android:textSize="@dimen/home_text" />
+
+                <TextView
+                    android:id="@+id/cl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:drawableLeft="@mipmap/beauty_liulan"
+                    android:drawablePadding="6dp"
+                    android:text="564s65f4sd"
+                    android:textColor="@color/home_back"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.onlylady.beautyapp.views.SquareLayout>
+
+
+</RelativeLayout>

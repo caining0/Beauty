@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@mipmap/user_beijigntu">
+
+        <RelativeLayout
+            android:id="@+id/usericon_layout"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="79dp">
+
+            <com.onlylady.beautyapp.views.CircleImageView
+                android:id="@+id/usericon"
+                android:layout_width="97dp"
+                android:layout_height="97dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/morentouxiang" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/loginname"
+            android:layout_width="73dp"
+            android:layout_height="29dp"
+            android:layout_below="@+id/usericon_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/selector_personal_login"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/username_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usericon_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37.5dp"
+            android:text="圣诞节不下雪"
+            android:textColor="@color/dedede"
+            android:textSize="17sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_usercenter"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/selector_personal_item">
+
+        <ImageView
+            android:id="@+id/setting_icon"
+            android:layout_width="21.5dp"
+            android:layout_height="21.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11.7dp"
+            android:src="@mipmap/setting_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/setting_icon"
+            android:text="@string/setting"
+            android:textColor="@color/home_text"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="8.5dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/enter_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dedede" />
+
+    <RelativeLayout
+        android:id="@+id/feedback_usercenter"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/selector_personal_item">
+
+        <ImageView
+            android:id="@+id/feedback_icon"
+            android:layout_width="21.5dp"
+            android:layout_height="21.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11.7dp"
+            android:src="@mipmap/feedback_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/feedback_icon"
+            android:text="@string/feedback"
+            android:textColor="@color/home_text"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="8.5dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/enter_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dedede" />
+
+    <RelativeLayout
+        android:id="@+id/feedback_zhibo"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:visibility="gone"
+        android:background="@drawable/selector_personal_item">
+
+        <ImageView
+            android:id="@+id/image_zhibo"
+            android:layout_width="21.5dp"
+            android:layout_height="21.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11.7dp"
+            android:src="@mipmap/zhibo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_zhibo"
+            android:text="@string/zhibo"
+            android:textColor="@color/home_text"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="8.5dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/enter_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dedede" />
+
+
+</LinearLayout>

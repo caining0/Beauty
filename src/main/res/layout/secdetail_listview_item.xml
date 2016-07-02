@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/liubai"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/dedede" />
+
+    <RelativeLayout
+        android:id="@+id/layout_timeriqi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/liubai">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/time_riqi"
+
+            android:background="@color/dedede" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/time_riqi"
+            android:background="@color/dedede" />
+
+        <TextView
+            android:id="@+id/time_riqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2015"
+            android:textColor="@color/home_text"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_timeriqi">
+
+        <com.onlylady.beautyapp.views.ImageDetail
+            android:id="@+id/imageview"
+            style="@style/image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@mipmap/banner_750_650" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="@dimen/playbutton"
+            android:layout_height="@dimen/playbutton"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/beauty_play" />
+
+        <ImageView
+            android:id="@+id/playorhuifang"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/zhiboicon" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textvalue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layoutimage"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/textcolor_grey"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/below"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:paddingRight="12dp">
+
+        <RelativeLayout
+            android:id="@+id/circlelay"
+            android:layout_width="@dimen/circleback"
+            android:layout_height="@dimen/circleback"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="21dp"
+            android:background="@mipmap/touxiang">
+
+            <com.onlylady.beautyapp.views.CircleImageView
+                android:id="@+id/circle"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/circle"
+                android:layout_height="@dimen/circle"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circlelay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2.5dp"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:text="吕布小小小小"
+            android:textColor="@color/home_back"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/below"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/textvalue" />
+
+</RelativeLayout>

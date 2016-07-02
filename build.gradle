@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+apply plugin: 'apt'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        applicationId "com.onlylady.beautyapp"
+        minSdkVersion 8
+        targetSdkVersion 22
+        versionCode 3
+        versionName "1.1.1"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('/Users/caining/Documents/work/key/beauty.jks')
+            storePassword 'onlyladybeauty'
+            keyAlias 'onlylady'
+            keyPassword 'onlyladybeauty'
+        }
+        release {
+            storeFile file('/Users/caining/Documents/work/key/beauty.jks')
+            storePassword 'onlyladybeauty'
+            keyAlias 'onlylady'
+            keyPassword 'onlyladybeauty'
+        }
+    }
+
+    //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉。
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+        }
+    }
+
+    //渠道Flavors，我这里写了一些常用的
+    productFlavors {
+        机锋 {}
+        应用宝 {}
+        百度应用 {}
+        奇虎360 {}
+        豌豆荚 {}
+        百度91 {}
+        小米 {}
+        安智 {}
+        安卓 {}
+        乐商店 {}
+        华为 {}
+        沃 {}
+        魅族 {}
+        youyi {}
+        木蚂蚁 {}
+        搜狗 {}
+        网易 {}
+        oppo {}
+        三星 {}
+        苏宁 {}
+        应用汇 {}
+        易用汇 {}
+        onlylady {}
+        中兴 {}
+        应用宝 {}
+        果罐 {}
+        pp助手 {}
+        小米首发 {}
+        应用宝首发 {}
+        productFlavors.all {
+            flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace(".apk", "-${defaultConfig.versionName}.apk")
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+}
+
+
+dependencies {
+    compile project(':torefreshlibry')
+    //    compile 'com.bigkoo:convenientbanner:2.0.4'
+    compile project(':convenientbanner')
+    apt "com.jakewharton:butterknife:7.0.1"
+    compile files('libs/butterknife-7.0.1.jar')
+    //        compile 'com.android.support:support-v4:22.2.1'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/pdr.jar')
+    //    compile project(':playerLibRelease')
+    compile project(':onekeyshare')
+    //    友盟消息推送
+    compile files('libs/com.umeng.message_v2.7.0.jar')
+    //    compile files('libs/wire-runtime-1.7.0.jar')
+    compile files('libs/ui.jar')
+    //    compile files('libs/com.umeng.message.lib_v2.6.0.jar')
+    //    compile project(':Pushlib')
+    compile files('libs/nativeui.jar')
+    compile files('libs/nopermission.jar')
+    compile files('libs/invocation.jar')
+    compile project(':ucrop')
+    //    compile files('libs/BRecorder.jar')
+    compile files('libs/pldroid-camera-streaming-1.5.3.jar')
+    compile files('libs/ijkmediaplayer.jar')
+    compile files('libs/pldroid-player-1.1.6.jar')
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.squareup.okhttp:okhttp:2.7.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.squareup.wire:wire-runtime:1.7.0'
+    compile 'com.qiniu:happy-dns:0.2.5'
+    compile 'com.google.code.gson:gson:2.6.2'
+}

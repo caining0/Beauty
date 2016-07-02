@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.onlylady.beautyapp.views.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:background="@color/white"
+    tools:context="com.onlylady.beautyapp.activitys.FeedbackActivity">
+
+    <RelativeLayout
+        android:id="@+id/feedbacktitle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/dedede">
+
+        <ImageView
+            android:id="@+id/setting_goback"
+            android:layout_width="34dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/selector_feedback_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/feedback"
+            android:textColor="@color/colorff3064"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/feedback_commit"
+            android:layout_width="44dp"
+            android:layout_height="35.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/selector_feedback_commit" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/feedback_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedbacktitle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/feedback_hint"
+        android:textColor="@color/home_text"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback_text"
+        android:layout_width="match_parent"
+        android:layout_height="252.5dp"
+        android:layout_below="@+id/feedback_hint"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/feedback_background">
+
+        <EditText
+            android:id="@+id/feedback_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:focusable="true"
+            android:singleLine="false"
+            android:hint="@string/feedback_edit_hint"
+            android:imeOptions="normal"
+            android:scrollbars="vertical"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:textColor="@color/home_text"
+            android:textColorHint="@color/home_back"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</com.onlylady.beautyapp.views.RippleView>

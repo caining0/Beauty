@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.onlylady.beautyapp.activitys.MineZhiboActivity">
+
+    <RelativeLayout
+        android:id="@+id/feedbacktitle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/dedede">
+
+        <ImageView
+            android:id="@+id/setting_goback"
+            android:layout_width="34dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/selector_feedback_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/minezhibo"
+            android:textColor="@color/colorff3064"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/addzhibo"
+            android:layout_width="44dp"
+            android:layout_height="35.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/selector_zhibo_add" />
+
+
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshRecycleView
+
+
+        android:id="@+id/pulltorefrshlistview_zhibo"
+        style="@style/listview"
+        android:layout_below="@+id/feedbacktitle"
+        >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshRecycleView>
+
+    <TextView
+        android:id="@+id/textshow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/feedbacktitle"
+        android:gravity="center"
+        android:paddingBottom="@dimen/x200"
+        android:text="你还没有添加直播"
+        android:textColor="@color/c999"
+        android:visibility="gone"
+        android:textSize="@dimen/x26">
+
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lookmore"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorff3064"
+        android:gravity="center"
+        android:text="查看更多回顾"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/liubai"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/dedede" />
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorff3064" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+
+            android:text="预告"
+            android:textColor="@color/colorff3064"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dedede" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/x375"
+            android:layout_height="@dimen/x285">
+
+
+            <ImageView
+                android:id="@+id/imageview"
+                style="@style/image"
+                android:layout_width="@dimen/x375"
+                android:layout_height="@dimen/x285"
+                android:background="@mipmap/banner_300_200" />
+
+            <TextView
+                android:id="@+id/time_riqiyesteday"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_alignParentBottom="true"
+                android:background="@mipmap/shijiantitu"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_marginRight="@dimen/px1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/time_riqitoday"
+                android:layout_width="34dp"
+                android:layout_height="14dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/shijiantitu"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/textvalue"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="@dimen/x35"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="sdfsdfsdfsdfsdfsdsdfsdfsdfsdfdsfdfdsf"
+                android:textColor="@color/textcolor_grey"
+                android:textSize="@dimen/x28" />
+
+            <RelativeLayout
+                android:id="@+id/circleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/textvalue"
+                android:layout_marginTop="@dimen/x30"
+                android:orientation="horizontal">
+
+                <com.onlylady.beautyapp.views.CircleImageView
+                    android:id="@+id/circle"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@mipmap/touxiang" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/circle"
+                    android:layout_marginRight="@dimen/x24"
+                    android:maxLines="1"
+                    android:text="吕小吕布小小小小"
+                    android:textColor="@color/home_back"
+                    android:textSize="@dimen/x24" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/yuyueornot"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/x50"
+                android:layout_marginRight="@dimen/x24"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/yiyuyue" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

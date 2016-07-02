@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">优美妆</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="uuid">zae2hiizqv</string>
+    <string name="vuid">aae8207d16</string>
+    <string name="setting">设置</string>
+    <string name="feedback">反馈</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="clean_memory">清理缓存</string>
+    <string name="feedback_hint">对我们有什么建议或意见，就不吐不快吧！</string>
+    <string name="feedback_edit_hint">输入反馈内容</string>
+    <string name="username">用户名</string>
+    <string name="commit">提交</string>
+    <string name="seccessyuyue">预约成功</string>
+    <string name="seccesscancelyuyue">取消预约成功</string>
+    <string name="zhibo">我的直播</string>
+    <string name="minezhibo">我的直播</string>
+    <string name="begintime">开始时间:</string>
+    <string name="label_select_picture">Select Picture</string>
+    <string name="toast_cannot_retrieve_selected_image">Cannot retrieve selected image</string>
+    <string name="toast_unexpected_error">Unexpected error</string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours"></string>
+    <string name="pickerview_minutes"></string>
+    <string name="pickerview_seconds">秒</string>
+
+
+    <string name="start">Start</string>
+
+    <string name="hw_codec_camera_streaming_txt">HW Codec Camera Streaming</string>
+    <string name="sw_codec_camera_streaming_txt">SW Codec Camera Streaming</string>
+    <string name="pure_audio_streaming_txt">Audio Streaming</string>
+
+    <string name="string_state_ready">READY</string>
+    <string name="string_state_preparing">PREPARING</string>
+    <string name="string_state_connecting">CONNECTING</string>
+    <string name="string_state_streaming">STREAMING</string>
+    <string name="string_state_netblocking">NETBLOCKING, STOPPING</string>
+    <string name="string_state_con_timeout">CONNECTION TIMEOUT</string>
+    <string name="title_activity_audio_streaming">AudioStreamingActivity</string>
+
+    <string name="flash_light_on">ON</string>
+    <string name="flash_light_off">OFF</string>
+
+</resources>

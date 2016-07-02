@@ -1,0 +1,15 @@
+<resources>
+
+
+    <!--<style name="NoTitleAppTheme" parent="AppTheme.NoActionBar">-->
+        <!--&lt;!&ndash;<item name="android:windowTranslucentStatus">true</item>&ndash;&gt;-->
+
+    <!--</style>-->
+    <!--<style name="AppTheme.NoActionBar">-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+
+    <!--</style>-->
+
+
+</resources>

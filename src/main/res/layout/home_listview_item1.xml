@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.onlylady.beautyapp.views.SquareLayout
+        android:id="@+id/squarelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homeviewpagerheight">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/below">
+
+
+            <ImageView
+                android:id="@+id/imageview"
+                style="@style/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/banner_750_650" />
+
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="@dimen/playbutton"
+                android:layout_height="@dimen/playbutton"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/beauty_play" />
+
+            <TextView
+                android:id="@+id/player_timer"
+                android:layout_width="35dp"
+                android:layout_height="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/player_timer"
+                android:gravity="center"
+                android:text="04.52"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </com.onlylady.beautyapp.views.SquareLayout>
+
+    <RelativeLayout
+        android:id="@+id/below"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/beauty_live_logo"
+            android:layout_width="72dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/beauty_live_logo" />
+
+        <TextView
+            android:id="@+id/tt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@+id/beauty_live_logo"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/home_text"
+            android:textSize="@dimen/home_text" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

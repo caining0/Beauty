@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videoContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/sflayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.letv.universal.widget.ReSurfaceView
+            android:id="@+id/sf"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true" />
+
+
+
+            <TextView
+                android:id="@+id/text_zhibozhuangtai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/fullscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/quanping"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

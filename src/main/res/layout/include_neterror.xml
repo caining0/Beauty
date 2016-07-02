@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/netlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/katong"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/noneticon" />
+
+    <TextView
+        android:id="@+id/tishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/katong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="您的网络不给力，请稍后再试"
+        android:textColor="@color/home_back"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/reload"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/tishi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/chongxinjiazai"
+        android:gravity="center"
+        android:text="重新加载"
+        android:textColor="#ff3064"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

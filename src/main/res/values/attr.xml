@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="EasySlidingTabs">
+        <attr name="easyIndicatorColor" format="color" />
+        <attr name="easyUnderlineColor" format="color" />
+        <attr name="easyTabTextColor" format="color" />
+        <attr name="easyTabTextSize" format="dimension"/>
+        <attr name="easySelectedTagTextColor" format="color" />
+        <attr name="easyDividerColor" format="color" />
+        <attr name="easyIndicatorHeight" format="dimension" />
+        <attr name="easyUnderlineHeight" format="dimension" />
+        <attr name="easyDividerPadding" format="dimension" />
+        <attr name="easyTabPaddingLeftRight" format="dimension" />
+        <attr name="easyTabBackground" format="reference" />
+        <attr name="easyScrollOffset" format="dimension" />
+        <attr name="easyShouldExpand" format="boolean" />
+        <attr name="easyTextAllCaps" format="boolean" />
+        <attr name="easyIndicatorDrawable" format="reference" />
+        <attr name="easyImageWidth" format="dimension"/>
+        <attr name="easyImageHeight" format="dimension"/>
+    </declare-styleable>
+    <!-- 波纹效果-->
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer"/>
+        <attr name="rv_rippleDuration" format="integer"/>
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+
+    <attr name="floatingActionButtonStyle" format="reference"/>
+    <declare-styleable name="wheelview">
+        <attr name="gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColorOut" format="color"/>
+        <attr name="textColorCenter" format="color"/>
+        <attr name="dividerColor" format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    	<script src="js/adaptive-version2.js" charset="UTF-8"></script>
+    	<script>
+	    window['adaptive'].desinWidth = 750;// 设计图宽度
+	    window['adaptive'].baseFont = 18;// 没有缩放时的字体大小
+	    window['adaptive'].maxWidth = 480;// 页面最大宽度 默认540
+	    window['adaptive'].init();// 调用初始化方法
+	</script>
+	<script type="text/javascript" charset="utf-8" src="http://yuntv.letv.com/player/vod/bcloud.js"></script>
+	<script src="js/lazyload.js" charset="UTF-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		LazyLoad.js([
+			'js/mui.min.js'
+			, 'js/jquery-1.8.3.min.js'
+			, 'js/tools.js'
+			, 'js/pgpassport.js'
+			, 'js/app.js'
+			, 'js/api.js'
+			, 'js/letv.js'
+			, 'js/detail-common.js'
+			, 'js/top.js'
+			, 'js/fx.js'
+		], function () {
+		});
+    </script>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="css/emoji.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>图文页面</title>
+    <style>
+    	body,html{height:100%;overflow:hidden;position:relative;}
+    	.box{height:100%;overflow:auto;position:absolute;z-index:10;top:0px;background:none;}
+    	.box_samil{height: 100%;overflow: auto;-webkit-overflow-scrolling: touch;}
+    	.top_sx{position:absolute;top:0;z-index:8;left:0;width:100%;height:40px;line-height:40px;text-align:center;font-size:0.32rem;color:#AAAAAA;}
+    	.box_samil_cont{width:100%;height:auto;overflow:hidden;}
+    </style>
+</head>
+<body>
+<!-- <div class="top_sx">正在刷新...</div>-->
+<div class="box" id="parent">
+	<div class="box_samil" id="parent2">
+		<div class="box_samil_cont" id="parent3">
+			<div class="content_top">
+				<div class="exo_banner" id="banner_out"><img style="min-height: 1.50rem" id="bigpic" src="images/placeholder@2x.png"></div>
+				<div id="player" style="display: none; width: 7.5rem;height: 4.2187rem;"></div>
+				<div class="zb_top iback">
+			        <div class="banner_bottom">
+			        	<p id="article_title"></p>
+			            <span class="yll_span" id="article_readnum"></span>
+			            <div class="tx">
+			            	<a href="#"><img id="article_author_pic" src="images/zb_tx_pic.png"></a><span id="article_author_name"></span>
+			            </div>
+			        </div>
+			    </div>
+			    
+			    <div class="tw_text" id="article_content">
+				</div>
+				<div style="height: 10px;background-color: #ededed;"></div>
+		    </div>
+		    <div class="zb_pl">
+		    	<h3>评论</h3>
+		        <div class="pl_cont tw_cont">
+		        		<div class="pl_cong_none" style="display: none;">无评论内容</div>
+		        		<ul id="reviews" class="mui-table-view">
+		        			<!--
+									<li class="mui-table-view-cell">
+										<div class="mui-slider-right mui-disabled">
+											<a class="mui-btn mui-btn-red" id="mui-btn-red">删除</a>
+										</div>
+										<div class="mui-slider-handle">
+											<div class="pl_list">
+								                <div>
+								                	<a href=""><img src="images/zb_pl_pic.png"></a>
+								                    <p class="name">我是小布布<span>02-25 14:30</span></p>
+								                </div>
+								                <p>这是内容页面，左上角是发布的作者及其观点。右边的是评论者及其观点，可以左右滑动看评论，与作者形成一种对话的形式。图是作者自主发布的高清大图。</p>
+								            </div>
+										</div>
+									</li>
+						-->
+					</ul>
+		        </div>
+		    </div>
+		</div>
+    </div>
+    <div class="goto_top">
+		<img src="images/top_img.png">
+	</div>
+</div>
+<div class="bottom_ts">
+	<div class="nomore_pl" id="loding_div"><span class="mui-icon mui-icon-spinner-cycle "></span> 正在加载...</div>
+	<div class="nomore_pl" id="nomore_pl">已全部加载完毕</div>
+</div>
+<footer>
+	<div class="zb_fx">
+    	<form>
+        	<div>
+            	<img src="images/zb_fx_bkong.png">
+            	<span class="input_ceng"><img src="images/zb_fx_bkong.png"></span>
+                <textarea class="textbox" placeholder="我来说几句"></textarea>
+            </div>
+            <a href="javascript:;" id="share"><img src="images/fx_button.jpg"></a>
+            <a href="javascript:;" id="reviewsender" class="share_fs" style="display: none;">发送</a>
+        </form>
+    </div>
+</footer>
+</body>
+</html>
